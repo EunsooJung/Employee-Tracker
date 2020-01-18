@@ -44,7 +44,7 @@ To start:
 
 - Project structure
 
-  [![Employee Tracker](https://github.com/EunsooJung/Note-Taker/blob/master/public/assets/images/ProjectStructure.png)](https://github.com/EunsooJung/Note-Taker/blob/master/public/assets/images/ProjectStructure.png)
+  [![Employee Tracker](https://github.com/EunsooJung/Employee-Tracker/blob/master/assets/images/ProjectStructure.png)]
 
 ```javascript
 ```
