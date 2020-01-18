@@ -21,7 +21,7 @@ node index.js or npm start (using nodemon)
 
 ## Preview
 
-[![Note-Taker](https://github.com/EunsooJung/Note-Taker/blob/master/public/assets/images/Note%20Taker.gif)](https://github.com/EunsooJung/Note-Taker/blob/master/public/assets/images/Note%20Taker.gif)
+[![Employee-Tracker](https://github.com/EunsooJung/Employee-Tracker/blob/master/assets/images/Emp-Tracker-Demo.gif)](https://github.com/EunsooJung/Employee-Tracker/blob/master/assets/images/Emp-Tracker-Demo.gif)
 
 ## Usage
 
