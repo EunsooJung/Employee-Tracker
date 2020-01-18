@@ -12,6 +12,9 @@ These instructions will get you a copy of the project up and running on your loc
 # Install inquirer
 npm i inquirer
 
+# Install MySQL
+npm i mysql
+
 # Run
 node index.js or npm start (using nodemon)
 ```
@@ -52,8 +55,9 @@ To start:
 ## Built With
 
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Inquirer](https://www.npmjs.com/package/inquirer)
+- [Inquirer](https://www.npmjs.com/package/inquirer) -- Interactive CLI
 - [Node.js](https://nodejs.org/en/)
+- [MySQL](https://www.npmjs.com/package/mysql)
 
 ## Authors
 
