@@ -1,0 +1,36 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "Build a Employee-Tracker CLI application for managing a company's employees using node, inquirer, and MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "watch": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EunsooJung/Employee-Tracker.git"
+  },
+  "keywords": [
+    "Node",
+    "inquirer",
+    "MySQL"
+  ],
+  "author": "Michael Eunsoo Jung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EunsooJung/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/EunsooJung/Employee-Tracker#readme",
+  "dependencies": {
+    "cfonts": "^2.4.8",
+    "console.table": "^0.10.0",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.3",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
