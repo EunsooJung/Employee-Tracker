@@ -1,6 +1,5 @@
 const mysql = require('mysql');
 
-// Conect to employee_db database
 const db = mysql.createConnection({
   host: 'localhost',
   port: 3306,

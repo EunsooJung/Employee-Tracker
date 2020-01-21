@@ -49,8 +49,56 @@ To start:
 
   [![Employee Tracker](https://github.com/EunsooJung/Employee-Tracker/blob/master/assets/images/ProjectStructure.png)]
 
+- Source Code Check point
+
+1. ORM - EmpTrackerDB.js: Connect to MySQL Database, reset database and defined db schema.
+2. Models layer example - budget.js: Defined functions to Calculates the combinded salaries of all employees and by department that using the Promise.
+
 ```javascript
+function getTotalBudget() {
+  return new Promise((resolve, reject) => {
+    const query = `SELECT SUM(salary) AS 'Total Budget' FROM role, employee WHERE employee.role_id=role.id`;
+    db.query(query, (err, results, fields) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(results[0]['Total Budget']);
+      }
+    });
+  });
+}
 ```
+
+3. View layer example: index.js using the inquirer
+
+- import controllers into the index.js
+
+```javascript
+  switch (answer.action.toLowerCase()) {
+    case 'view all employees':
+      await displayAllEmployees();
+```
+
+4. Controllers layer example - budget.js: Displays the total utilized budget that applied async/wait
+
+```javascript
+async function displayTotalBudget() {
+  try {
+    let totalBudget = await getTotalBudget(); // from budget model
+    totalBudget = new Intl.NumberFormat('en-CAD', {
+      style: 'currency',
+      currency: 'CAD'
+    }).format(totalBudget);
+    const footer = displayHeadline(`Total Budget`); // from utils/etLog.js
+    displayResults(`Total Budget: ${totalBudget}`);
+    displayFooter(footer);
+  } catch (err) {
+    if (err) throw err;
+  }
+}
+```
+
+5. utils: Defined etBanner and etLog to design print (ex: font, size, color etc.) page in inquirer.
 
 ## Built With
 
@@ -58,6 +106,7 @@ To start:
 - [Inquirer](https://www.npmjs.com/package/inquirer) -- Interactive CLI
 - [Node.js](https://nodejs.org/en/)
 - [MySQL](https://www.npmjs.com/package/mysql)
+- [MVC Patterns](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 
 ## Authors
 
