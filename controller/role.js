@@ -1,6 +1,7 @@
+const inquirer = require('inquirer');
 const { getAllDepartmentNames } = require('./department');
 const { getDepartmentID } = require('../model/department');
-const { getAllRoles } = require('../model/role');
+const { getAllRoles, insertRole } = require('../model/role');
 const { displayHeadline, displayFooter } = require('../utils/etLog');
 
 async function addRole() {
